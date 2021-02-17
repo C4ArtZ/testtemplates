@@ -45,4 +45,5 @@
   <Config Name="Google safe browsing key" Target="GOOGLE_SAFE_BROWSING_KEY" Default="" Mode="" Description="Google Cloud API to prevent from users from submitting malware URLs. Get one from https://developers.google.com/safe-browsing/v4/get-started" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
   <Config Name="Google Analytics key" Target="GOOGLE_ANALYTICS" Default="" Mode="" Description="your GA key" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
   <Config Name="Google Analytics universal key" Target="GOOGLE_ANALYTICS_UNIVERSAL" Default="" Mode="" Description="Your universal GA key" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
+  <Config Name="Internal port" Target="PORT" Default="3000" Mode="" Description="Internal application port. Do not change this!" Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
 </Container>
