@@ -12,7 +12,7 @@
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <Icon>https://raw.githubusercontent.com/C4ArtZ/Unraid-Templates/master/templates/icons/kutt.png</Icon>
   <Description>Kutt is a modern URL shortener with support for custom domains. Shorten URLs, manage your links and view the click rate statistics.&#xD;&#xD;[b]This container requires Redis and a Postgres database![b]</Description>
-  <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="WebUI Port" Target="3000" Default="8080" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Database host" Target="DB_HOST" Default="" Mode="" Description="IP of your Postgres instance" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Database port" Target="DB_PORT" Default="5432" Mode="" Description="Port of your postgres instance" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Database name" Target="DB_NAME" Default="kutt" Mode="" Description="Name of your database. Make sure the database is already created and your user has the needed permissions!" Type="Variable" Display="always" Required="true" Mask="false"/>
