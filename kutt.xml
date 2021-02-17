@@ -18,6 +18,7 @@
   <Config Name="Database name" Target="DB_NAME" Default="kutt" Mode="" Description="Name of your database. Make sure the database is already created and your user has the needed permissions!" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Database user" Target="DB_USER" Default="kutt" Mode="" Description="Name of your database user" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Database password" Target="DB_PASSWORD" Default="" Mode="" Description="Password of your database user" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Database SSL" Target="DB_SSL" Default="false" Mode="" Description="Use SSL for database connection" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Redis host" Target="REDIS_HOST" Default="" Mode="" Description="IP of your Redis instance" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Redis" Target="REDIS_PORT" Default="6379" Mode="" Description="Port of your Redis instance" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Redis password" Target="REDIS_PASSWORD" Default="" Mode="" Description="Password for your Redis instance. Leave blank if you didn't set one!" Type="Variable" Display="always" Required="false" Mask="true"/>
@@ -42,6 +43,6 @@
   <Config Name="reCaptcha site key" Target="RECAPTCHA_SITE_KEY" Default="" Mode="" Description="Invisible reCaptcha key. Create one here https://www.google.com/recaptcha/intro/" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
   <Config Name="reCaptcha secret key" Target="RECAPTCHA_SECRET_KEY" Default="" Mode="" Description="Container Variable: RECAPTCHA_SECRET_KEY" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
   <Config Name="Google safe browsing key" Target="GOOGLE_SAFE_BROWSING_KEY" Default="" Mode="" Description="Google Cloud API to prevent from users from submitting malware URLs. Get one from https://developers.google.com/safe-browsing/v4/get-started" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
-  <Config Name="Enable Google Analytics" Target="GOOGLE_ANALYTICS" Default="" Mode="" Description="Set to 'true' to enable" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="Google Analytics key" Target="GOOGLE_ANALYTICS" Default="" Mode="" Description="your GA key" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
   <Config Name="Google Analytics universal key" Target="GOOGLE_ANALYTICS_UNIVERSAL" Default="" Mode="" Description="Your universal GA key" Type="Variable" Display="advanced-hide" Required="false" Mask="true"/>
 </Container>
