@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>planka</Name>
+  <Repository>meltyshev/planka</Repository>
+  <Registry>https://hub.docker.com/r/meltyshev/planka/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/102829-support-c4artz-templates</Support>
+  <Project>https://github.com/plankanban/planka#deploy</Project>
+  <Overview>A Trello-like kanban board built with React and Redux.&#xD;&#xD;[b]Requires a Postgres database![b]</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP][PORT:1337]</WebUI>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Description>A Trello-like kanban board built with React and Redux.&#xD;&#xD;[b]Requires a Postgres database![b]</Description>
+  <Config Name="WebUI port" Target="1337" Default="3000" Mode="tcp" Description="Container Port: 1337" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="User avatars" Target="/app/public/user-avatars" Default="/mnt/user/appdata/planka/user-avatars" Mode="rw" Description="Container Path: /app/public/user-avatars" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Projekt background images" Target="/app/public/project-background-images" Default="/mnt/user/appdata/planka/projekt-background-images" Mode="rw" Description="Container Path: /app/public/project-background-images" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Host Path 3" Target="/app/public/attachments" Default="/mnt/user/appdata/planka/attachments" Mode="rw" Description="Container Path: /app/public/attachments" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/planka/attachments</Config>
+  <Config Name="Base url" Target="BASE_URL" Default="http://localhost:3000" Mode="" Description="Container Variable: BASE_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database url" Target="DATABASE_URL" Default="" Mode="" Description="postgresql://user:password@host/database" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Secret key" Target="SECRET_KEY" Default="notsecretkey" Mode="" Description="Container Variable: SECRET_KEY" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
