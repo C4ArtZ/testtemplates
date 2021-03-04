@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>PornVault</Name>
-  <Repository>leadwolf/porn-vault</Repository>
+  <Repository>leadwolf/porn-vault:0.25.0-alpine</Repository>
   <Registry>https://hub.docker.com/r/leadwolf/porn-vault/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
