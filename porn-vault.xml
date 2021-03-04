@@ -16,7 +16,7 @@
 3. Edit the config.json file within the config directory. Add the following to the top:&#xD;
 &#xD;
   "search": {&#xD;
-    "host": "http://192.168.69.68:9200",&#xD;
+    "host": "http://IpToYourElasticsearchInstance:9200",&#xD;
     "log": false,&#xD;
     "version": "7.x",&#xD;
     "auth": null&#xD;
@@ -36,7 +36,7 @@
 3. Edit the config.json file within the config directory. Add the following to the top:&#xD;
 &#xD;
   "search": {&#xD;
-    "host": "http://192.168.69.68:9200",&#xD;
+    "host": "http://IpToYourElasticsearchInstance:9200",&#xD;
     "log": false,&#xD;
     "version": "7.x",&#xD;
     "auth": null&#xD;
