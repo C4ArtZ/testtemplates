@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Container version="2">
+   <Name Default="Subvert">Subvert</Name>
+    <Overview>
+    Generate subtitles, chapters, and summaries of videos in seconds with the help of OpenAI.
+    </Overview>
+    <Registry>https://registry.hub.docker.com/r/aschmelyun/subvert</Registry>
+    <Repository>aschmelyun/subvert</Repository>
+    <Support>https://github.com/aschmelyun/subvert/issues</Support>
+    <Network Default="bridge">bridge</Network>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <Icon></Icon>
+    <Category>Productivity: Status:Beta</Category>
+    <Config 
+    Type="Variable" 
+    Name="OpenAI API Key" 
+    Target="OPENAI_API_KEY" 
+    Default="" 
+    Description="https://platform.openai.com/account/api-keys" 
+    Mask="true" 
+    Display="always" 
+    Required="true">API Key</Config>
+    <Config 
+    Type="Variable" 
+    Name="Max uploadable filesize" 
+    Target="UPLOAD_MAX_FILESIZE" 
+    Default="256M" 
+    Description="Changes PHP's UPLOAD_MAX_FILESIZE setting. Default is 256M" 
+    Mask="false" 
+    Display="always" 
+    Required="false">Max uploadable filesize</Config>
+    <Config 
+    Type="Variable" 
+    Name="Memory Limit" 
+    Target="MEMORY_LIMIT" 
+    Default="512M" 
+    Description="Changes PHP's MEMORY_LIMIT setting. Default is 512M" 
+    Mask="false" 
+    Display="always" 
+    Required="false">Memory Limit</Config>
+    <Config 
+    Type="Port" 
+    Name="Web UI" 
+    Target="80" 
+    Default="80" 
+    Mode="tcp" 
+    Description="Subvert will be available on this port" 
+    Display="always" 
+    Required="true">80</Config>
+ </Container>
